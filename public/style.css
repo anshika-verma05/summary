@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap');
+
+:root {
+    /*primary colors*/
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+
+    /*gradients*/
+    /*---background---*/
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    /*---circle---*/
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue-: hsla(241, 72%, 46%, 0);
+   
+    /*neutrals*/
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+
+
+.main {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    height: 95vh;
+    align-items: center;
+}
+
+.result-card {
+     background-image: linear-gradient( var(--Lightslateblue) , var(--Lightroyalblue));
+     width: 350px;
+     height: 450px;
+     text-align: center;
+     border-radius: 3rem;
+    
+}
+
+.summary-card {
+    background-color: var(--White);
+    box-shadow: 2px 5px 30px 10px hsla(234, 85%, 45%, 0.05);
+    width: 325px;
+    height: 424px;
+}
+
+
+
+h2 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding-top: 0.7rem;
+}
+
+.result-card-heading {
+    color: var(--Lightlavender);
+}
+
+.score {
+    background-image: linear-gradient( var(--Violetblue) , var(--Persianblue-));
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding: 1rem ;
+    color: var(--Lightlavender);
+    font-size: 1.5rem;
+    
+}
+
+.points {
+   color: white;
+   font-size: 4rem;
+   font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.comment {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.5rem;
+    color: var(--White);
+    margin-top: 1.5rem;
+}
+
+.stats {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: #c8c7ff;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.7rem;
+}
+
+.flex {
+   background-color: bisque;
+   height: 2rem;
+   border: 0.5rem solid var(--White);
+   flex: 1;
+   display: flex;
+   justify-content: space-around;
+   width: 270px;
+   border-radius: 1rem;
+   font-family: 'Hanken Grotesk', sans-serif;
+   font-weight: bold;
+}
+
+.card-img {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.summary-card {
+    background-color: var(--White);
+    height: 450px;
+    
+}
+
+.summary-class-heading {
+   padding-left: 2rem;
+}
+
+
+
+.reaction {
+    color: var(--Lightred);
+}
+
+.memory {
+    color: var(--Orangeyyellow);
+}
+
+.verbal {
+    color: var(--Greenteal);
+}
+
+.visual {
+    color: var(--Cobaltblue);
+}
+
+.Reaction {
+    background-color: hsla(0, 100%, 67%,0.05);
+}
+
+.Memory {
+    background-color: hsla(39, 100%, 56%,0.05);
+}
+
+.Verbal {
+    background-color: hsl(166, 100%, 37%,0.05);
+}
+
+.Visual {
+    background-color: hsla(234, 85%, 45%,0.05);
+}
+
+.grey {
+    color: #00000066;
+
+}
+
+.marks {
+    font-weight: 900;
+}
+
+.button {
+    width: 270px;
+    height: 50px;
+    background-color: var(--Darkgrayblue);
+    color: var(--White);
+    border-style: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: var(--Lightroyalblue);
+    
+}
+
+/*--responsive web design--*/
+@media  (max-width: 600px) {
+     .main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .result-card {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .summary-card {
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+    .flex {
+        width: 90vw;
+    }
+
+    .button {
+        width: 90%;
+    }
+
+}  
